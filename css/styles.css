@@ -11,20 +11,47 @@
    --logo-background-click: #188CE8;
 }
 
+/* -------переменные----------- */
 /* основной цвет color: #757575; */
 /* вторичный цвет color: #212121; */
 /* цвет прозрачный color: rgba(255, 255, 255, 0.6); */
 /* белый цвет color: #FFFFFF; */
 /* цвет лого color: #2196F3; */
 /* черный цвет  color: #000000;*/
+
+/* Обнуление margin и padding*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+   margin: 0px;
+   margin: 0px;
+   padding: 0px;
+}
+
+/* ----------BODY------------- */
 body {
    background-color: #FFFFFF;
    color: var(--primary-text-color);
    font-family: Roboto, sans-serif;
    font-weight: 400;
    letter-spacing: 0.03em;
+
 }
 
+/* outline: 2px solid tomato; */
+
+.container {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1200px;
+   outline: 2px solid tomato;
+}
 
 .list {
    list-style: none;
@@ -37,6 +64,9 @@ a {
 /*------------HEADER----------- */
 /* -----------studio----------- */
 
+.page-header {
+   background-color: rgb(247, 234, 211);
+}
 
 .logo {
    color: var(--logo-color);
@@ -85,6 +115,12 @@ a {
 .hero {
    background-color: var(--section-background);
    text-align: center;
+
+}
+
+.hero-content {
+   padding-top: 200px;
+   padding-bottom: 200px;
 }
 
 .hero-title {
@@ -94,12 +130,14 @@ a {
    line-height: 1.36;
    letter-spacing: 0.06em;
    text-transform: uppercase;
+   margin-bottom: 30px;
 }
 
 button {
    font-family: inherit;
    cursor: pointer;
    font-size: 16px;
+   border: 1px solid transparent;
 }
 
 .hero button {
@@ -111,6 +149,7 @@ button {
    height: 50px;
    width: 200px;
    letter-spacing: 0.06em;
+
 }
 
 .hero button:hover,
@@ -119,12 +158,39 @@ button {
 }
 
 /*------------ declaration--------- */
+.declaration-work {
+   background-color: rgb(224, 241, 188);
+   padding-bottom: 94px;
+   outline: 2px solid tomato;
+}
+
+.declaration-text {
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 82px;
+   padding-bottom: 94px;
+}
+
+.declaration-list {
+   display: flex;
+
+}
+
+.declaration-list li {
+   max-width: 270px;
+}
+
+.declaration-list li:not(:last-child) {
+   margin-right: 30px;
+}
+
 .declaration-list h3 {
    color: var(--title-text-color);
    font-size: 14px;
    font-weight: 700;
    line-height: 1.14;
    text-transform: uppercase;
+   margin-bottom: 10px;
 }
 
 .declaration-list p {
@@ -134,6 +200,27 @@ button {
 }
 
 /*------------ work--------------- */
+
+
+.work-content {
+   padding-left: 15px;
+   padding-right: 15px;
+
+}
+
+.work-title {
+   margin-bottom: 50px;
+}
+
+.work-images {
+   display: flex;
+   justify-content: center;
+}
+
+.work-images li:not(:last-child) {
+   margin-right: 30px;
+}
+
 .work-title,
 .our-team-title {
    color: var(--title-text-color);
@@ -148,11 +235,40 @@ button {
    background-color: var(--button-back-color);
 }
 
+.our-team-content {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.our-team-title {
+   margin-bottom: 50px;
+}
+
+.team-img {
+   display: flex;
+   justify-content: center;
+}
+
+.team-img li {
+   background-color: var(--body-background-color);
+   text-align: center;
+}
+
+.team-img li:not(:last-child) {
+   margin-right: 30px;
+   padding-bottom: 30px;
+}
+
 .team-img h3 {
    color: var(--title-text-color);
    font-size: 16px;
    font-weight: 500;
    line-height: 1.17;
+   margin-bottom: 10px;
+}
+
+.team-img img {
+   margin-bottom: 30px;
 }
 
 .team-img p {
@@ -165,6 +281,12 @@ footer {
    background-color: var(--section-background);
 }
 
+.fotor-content {
+   padding-top: 60px;
+   padding-left: 15px;
+   padding-bottom: 60px;
+}
+
 .logo-footer {
    color: var(--logo-color);
    font-family: Raleway, sans-serif;
@@ -172,6 +294,7 @@ footer {
    font-weight: 700;
    line-height: 1.19;
    letter-spacing: 0.03em;
+
 }
 
 .logo-footer span {
@@ -184,6 +307,7 @@ footer {
    font-size: 14px;
    font-style: normal;
    line-height: 1.71;
+   margin-top: 20px;
 }
 
 .address-map {
@@ -193,6 +317,10 @@ footer {
 .address-map:hover,
 .address-map:focus {
    color: var(--logo-color);
+}
+
+.contact-footer li:not(:last-child) {
+   margin-bottom: 9px;
 }
 
 .contact-footer .click {
@@ -223,8 +351,9 @@ footer {
    line-height: 1.62;
    letter-spacing: 0.03em;
    text-align: center;
-   border: 1px solid var(--button-back-color);
    border-radius: 4px;
+   padding-left: 22px;
+   padding-right: 22px;
 }
 
 .button-menu:hover,
@@ -234,27 +363,27 @@ footer {
 }
 
 .old-menu {
-   width: 73px;
+   min-width: 73px;
    height: 38px;
 }
 
 .web-menu {
-   width: 128px;
+   min-width: 73px;
    height: 38px;
 }
 
 .applic-menu {
-   width: 145px;
+   min-width: 73px;
    height: 38px;
 }
 
 .desing-menu {
-   width: 103px;
+   min-width: 73px;
    height: 38px;
 }
 
 .market-menu {
-   width: 130px;
+   min-width: 73px;
    height: 38px;
 }
 
