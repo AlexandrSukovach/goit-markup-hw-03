@@ -64,8 +64,12 @@ a {
 /*------------HEADER----------- */
 /* -----------studio----------- */
 
-.page-header {
-   background-color: rgb(247, 234, 211);
+.page-header-comtent {
+   display: flex;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 24px;
+   padding-bottom: 28px;
 }
 
 .logo {
@@ -81,7 +85,21 @@ a {
    color: var(--title-text-color);
 }
 
+.logo-nav-content {
+   display: flex;
+   align-items: center;
+}
+
 /*------------ Sitenav---------- */
+.site-nav {
+   display: flex;
+   margin-left: 93px;
+}
+
+.site-nav li:not(:last-child) {
+   margin-right: 50px;
+}
+
 .site-nav .click {
    color: var(--title-text-color);
    font-weight: 500;
@@ -97,6 +115,17 @@ a {
 
 .site-nav .click.current {
    color: var(--logo-color);
+}
+
+.auth-nav {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+}
+
+
+.auth-nav li:not(:last-child) {
+   margin-right: 50px;
 }
 
 .auth-nav .click {
@@ -130,6 +159,7 @@ a {
    line-height: 1.36;
    letter-spacing: 0.06em;
    text-transform: uppercase;
+
    margin-bottom: 30px;
 }
 
@@ -148,6 +178,7 @@ button {
    border-radius: 4px;
    line-height: 1.87;
    letter-spacing: 0.06em;
+
    height: 50px;
    min-width: 200px;
    padding-left: 32px;
@@ -191,6 +222,7 @@ button {
    font-weight: 700;
    line-height: 1.14;
    text-transform: uppercase;
+
    margin-bottom: 10px;
 }
 
@@ -266,6 +298,7 @@ button {
    font-size: 16px;
    font-weight: 500;
    line-height: 1.17;
+
    margin-bottom: 10px;
 }
 
@@ -309,6 +342,7 @@ footer {
    font-size: 14px;
    font-style: normal;
    line-height: 1.71;
+
    margin-top: 20px;
 }
 
@@ -354,6 +388,7 @@ footer {
    letter-spacing: 0.03em;
    text-align: center;
    border-radius: 4px;
+
    padding-left: 22px;
    padding-right: 22px;
 }
