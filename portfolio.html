@@ -6,7 +6,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -40,95 +39,115 @@
    <!-- portfolio -->
    <main>
       <section class="portfolio">
-         <!--скрытый заголовок <h1>Портфолио</h1> -->
-         <h1 class="visually-hidden">Портфолио</h1>
-         <!-- button-menu -->
-         <ul class="portfolio-menu list">
-            <li>
-               <button type="button" class="button-menu old-menu">Все</button>
-            </li>
-            <li>
-               <button type="button" class="button-menu web-menu">Веб-сайт</button>
-            </li>
-            <li>
-               <button type="button" class="button-menu applic-menu">Приложения</button>
-            </li>
-            <li>
-               <button type="button" class="button-menu desing-menu">Дизайн</button>
-            </li>
-            <li>
-               <button type="button" class="button-menu market-menu">Маркетинг</button>
-            </li>
-         </ul>
-         <!-- portfolio-list -->
-         <ul class="portfolio-site list">
-            <li>
-               <a href="">
-                  <img src="./images/технокряк.jpg" alt="изображение монитора с сайтом" width="370" height="294">
-                  <h3>Технокряк</h3>
-                  <p>Веб-сайт</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/постер.jpg" alt="два игрока играют в баскетбол" width="370" height="294">
-                  <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                  <p>Дизайн</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/ресторан.jpg" alt="логотип ресторана" width="370" height="294">
-                  <h3>Ресторан Seafood</h3>
-                  <p>Приложение</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/проект-прайм.jpg" alt="изображение наушников" width="370" height="294">
-                  <h3>Проект Prime</h3>
-                  <p>Маркетинг</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/проект-боксез.jpg" alt="изображение двух коробок" width="370" height="294">
-                  <h3>Проект Boxes</h3>
-                  <p>Приложение</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/инспирейшн.jpg" alt="изображение монитора с сайтом" width="370" height="294">
-                  <h3 lang="en">Inspiration has no Borders</h3>
-                  <p>Веб-сайт</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/издание.jpg" alt="раскрытый журнал" width="370" height="294">
-                  <h3>Издание Limited Edition</h3>
-                  <p>Дизайн</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/проект-лаб.jpg" alt="изображение бейджа" width="370" height="294">
-                  <h3>Проект LAB</h3>
-                  <p>Маркетинг</p>
-               </a>
-            </li>
-            <li>
-               <a href="">
-                  <img src="./images/браунинг.jpg" alt="человек работает на ноутбуке" width="370" height="294">
-                  <h3 lang="en">Growing Business</h3>
-                  <p>Приложение</p>
-               </a>
-            </li>
-         </ul>
-
+         <div class="portfolio-content container">
+            <!--скрытый заголовок <h1>Портфолио</h1> -->
+            <h1 class="visually-hidden">Портфолио</h1>
+            <!-- button-menu -->
+            <ul class="portfolio-menu list">
+               <li>
+                  <button type="button" class="button-menu old-menu">Все</button>
+               </li>
+               <li>
+                  <button type="button" class="button-menu web-menu">Веб-сайт</button>
+               </li>
+               <li>
+                  <button type="button" class="button-menu applic-menu">Приложения</button>
+               </li>
+               <li>
+                  <button type="button" class="button-menu desing-menu">Дизайн</button>
+               </li>
+               <li>
+                  <button type="button" class="button-menu market-menu">Маркетинг</button>
+               </li>
+            </ul>
+            <!-- portfolio-list -->
+            <div class="portfolio-flex section">
+               <ul class="portfolio-site list">
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/технокряк.jpg" alt="изображение монитора с сайтом" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Технокряк</h3>
+                           <p>Веб-сайт</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/постер.jpg" alt="два игрока играют в баскетбол" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                           <p>Дизайн</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/ресторан.jpg" alt="логотип ресторана" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Ресторан Seafood</h3>
+                           <p>Приложение</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/проект-прайм.jpg" alt="изображение наушников" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Проект Prime</h3>
+                           <p>Маркетинг</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/проект-боксез.jpg" alt="изображение двух коробок" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Проект Boxes</h3>
+                           <p>Приложение</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/инспирейшн.jpg" alt="изображение монитора с сайтом" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3 lang="en">Inspiration has no Borders</h3>
+                           <p>Веб-сайт</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/издание.jpg" alt="раскрытый журнал" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Издание Limited Edition</h3>
+                           <p>Дизайн</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/проект-лаб.jpg" alt="изображение бейджа" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3>Проект LAB</h3>
+                           <p>Маркетинг</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="flex-elements">
+                     <a href="">
+                        <img src="./images/браунинг.jpg" alt="человек работает на ноутбуке" width="370" height="294">
+                        <div class="flex-elements-text">
+                           <h3 lang="en">Growing Business</h3>
+                           <p>Приложение</p>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
       </section>
-
    </main>
    <footer>
       <div class="fotor-content container">
@@ -143,7 +162,6 @@
             </ul>
          </address>
       </div>
-
    </footer>
 </body>
 
