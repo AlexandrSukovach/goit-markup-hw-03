@@ -47,11 +47,11 @@ body {
    margin-left: auto;
    margin-right: auto;
    width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
 .section {
-   padding-left: 15px;
-   padding-right: 15px;
    padding-top: 94px;
    padding-bottom: 94px;
 }
@@ -64,6 +64,10 @@ a {
    text-decoration: none;
 }
 
+img {
+   display: block;
+}
+
 /*------------HEADER----------- */
 /* -----------studio----------- */
 .page-header {
@@ -72,11 +76,6 @@ a {
 
 .page-header-comtent {
    display: flex;
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-top: 24px;
-   padding-bottom: 28px;
-
 }
 
 .logo {
@@ -101,6 +100,12 @@ a {
 .site-nav {
    display: flex;
    margin-left: 93px;
+}
+
+.site-nav a {
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
 }
 
 .site-nav li:not(:last-child) {
@@ -151,9 +156,6 @@ a {
 .hero {
    background-color: var(--section-background);
    text-align: center;
-}
-
-.hero-content {
    padding-top: 200px;
    padding-bottom: 200px;
 }
@@ -196,13 +198,12 @@ button {
 
 /*------------ declaration--------- */
 
-.declaration-text {
+.declaration {
    padding-bottom: 0px;
 }
 
 .declaration-list {
    display: flex;
-   justify-content: center;
 }
 
 .declaration-list li {
@@ -237,7 +238,11 @@ button {
 
 .work-images {
    display: flex;
-   justify-content: center;
+
+}
+
+.work-images li {
+   width: 370px;
 }
 
 .work-images li:not(:last-child) {
@@ -264,16 +269,20 @@ button {
 
 .team-img {
    display: flex;
-   justify-content: center;
 }
 
 .team-img li {
    background-color: var(--body-background-color);
    text-align: center;
+   width: 270px;
 }
 
 .team-img li:not(:last-child) {
    margin-right: 30px;
+}
+
+.team-img-text {
+   padding-top: 30px;
    padding-bottom: 30px;
 }
 
@@ -285,9 +294,7 @@ button {
    margin-bottom: 10px;
 }
 
-.team-img img {
-   margin-bottom: 30px;
-}
+
 
 .team-img p {
    font-size: 16px;
@@ -368,7 +375,6 @@ footer {
 .portfolio-menu {
    display: flex;
    justify-content: center;
-   padding-top: 94px;
    margin-bottom: 50px;
 }
 
@@ -453,9 +459,7 @@ footer {
    margin-bottom: 30px;
 }
 
-.flex-elements img {
-   display: block;
-}
+
 
 .flex-elements:nth-child(3n) {
    margin-right: 0px;
