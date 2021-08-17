@@ -368,9 +368,7 @@ footer {
    overflow: hidden;
 }
 
-.portfolio-flex {
-   padding-top: 0px;
-}
+
 
 .portfolio-menu {
    display: flex;
@@ -438,6 +436,10 @@ footer {
    padding-top: 0px;
 }
 
+.portfolio-flex {
+   padding-top: 0px;
+}
+
 .portfolio-site h3 {
    color: var(--title-text-color);
    font-size: 18px;
@@ -452,21 +454,13 @@ footer {
    line-height: 1.87;
 }
 
-.flex-elements {
-   display: flex;
+.flex-elements img {
    width: 370px;
+}
+
+.flex-elements {
    margin-right: 30px;
    margin-bottom: 30px;
-}
-
-
-
-.flex-elements:nth-child(3n) {
-   margin-right: 0px;
-}
-
-.flex-elements:nth-last-child(-n+3) {
-   margin-bottom: 0px;
 }
 
 .flex-elements-text {
@@ -480,4 +474,12 @@ footer {
 
 .flex-elements h3 {
    margin-bottom: 4px;
+}
+
+.flex-elements:nth-child(3n) {
+   margin-right: 0px;
+}
+
+.flex-elements:nth-last-child(-n+3) {
+   margin-bottom: 0px;
 }
